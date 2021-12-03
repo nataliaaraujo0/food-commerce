@@ -1,0 +1,39 @@
+.headerContainer {
+  display: flex;
+  justify-content: center;
+}
+
+.headerContent {
+  max-width: 1120px;
+  display: flex;
+  align-items: center;
+  height: 5rem;
+  padding: 0 4rem;
+  margin: 0 2rem;
+
+  strong {
+    font-size: 1.5rem;
+    color: var(--green-400);
+  }
+
+  nav {
+    margin-left: 5rem;
+    padding: 4rem;
+
+    a {
+      padding: 1rem;
+      text-decoration: none;
+      color: var(--white);
+    }
+  }
+
+  button {
+    width: 130px;
+    height: 52px;
+    font-size: 1rem;
+    border: 0;
+    border-radius: 5px;
+    background-color: var(--white);
+    color: var(--green-400);
+  }
+}

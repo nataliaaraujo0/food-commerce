@@ -4,17 +4,19 @@
   box-sizing: border-box;
 }
 
-$green-400: #badc58;
-$blue-600: #2d3561;
-$blue-800: #1d164d;
-$blue-300: #9e9baf;
-
-$gray-300: #707070;
-$gray-200: #b4b4b4;
-$gray-100: #bcbcbc;
-$white: #ffffff;
-
 body {
+  --green-400: #badc58;
+  --blue-600: #2d3561;
+  --blue-800: #1d164d;
+  --blue-300: #9e9baf;
+
+  --gray-300: #707070;
+  --gray-200: #b4b4b4;
+  --gray-100: #bcbcbc;
+  --white: #ffffff;
+
+  background: #ececec;
+
   @media (max-width: 1080px) {
     html {
       font-size: 93.75%;
@@ -48,6 +50,12 @@ body {
   textarea,
   button {
     font-weight: bold;
+    font-family: "Montserrat", sans-serif;
+  }
+
+  a,
+  nav {
+    font-weight: regular;
     font-family: "Montserrat", sans-serif;
   }
 }
