@@ -6,6 +6,7 @@ interface IBlog {
     title: string;
     titleAvatar: string;
 }
+
 const blogs: Array<IBlog> = [
     {
         imgUrl: './images/blog_image_1.svg',
@@ -14,19 +15,19 @@ const blogs: Array<IBlog> = [
     },
 
     {
-        imgUrl: './images/blog_image_2.svg',
+        imgUrl: './images/bloco_image_2.svg',
         title: 'Nutrition: Tips for Improving Your Health',
         titleAvatar: 'Mike Jackson',
     },
 
     {
-        imgUrl: './images/blog_image_3.svg',
+        imgUrl: './images/bloco_image_3.svg',
         title: 'The top 10 benefits of eating healthy',
         titleAvatar: 'Bryan Mc Gregor',
     },
 
     {
-        imgUrl: './images/blog_image_4.svg',
+        imgUrl: './images/bloco_image_4.svg',
         title: 'What Makes a Healthy Diet?',
         titleAvatar: 'Jashua',
     },
@@ -36,6 +37,7 @@ const blogs: Array<IBlog> = [
 export function CatalogBlog() {
 
     return (
+
         <div className={styles.ContentContainer}>
             <h1>blog</h1>
             <p>Far far away, behind the word mountains,
@@ -49,5 +51,6 @@ export function CatalogBlog() {
 
             </div>
         </div>
+
     )
 }

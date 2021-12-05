@@ -2,16 +2,17 @@ import styles from './styles.module.scss'
 
 export function CardBlog({ imgUrl, title, titleAvatar }) {
     return (
-        <div className={styles.ContentContainer}>
+        <div className={styles.cardContainer}>
 
             <img src={imgUrl} alt="" />
-            <h1>{title}</h1>
+            <div className={styles.cardContent}>
+                <h1>{title}</h1>
 
-            <div className={styles.CardAvatar}>
-                <div></div>
-                <p>{titleAvatar}</p>
+                <div className={styles.CardAvatar}>
+                    <div></div>
+                    <p>{titleAvatar}</p>
+                </div>
             </div>
-
         </div>
 
     )
