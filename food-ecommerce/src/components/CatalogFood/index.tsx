@@ -41,7 +41,7 @@ export function CatalogFood() {
                     there live the blind texts.</p>
 
                 <div className={styles.cardFoods}>
-                    {foods.map(food => (<CardFood imgUrl={food.imgUrl} nome={food.title} />))}
+                    {foods.map(food => (<CardFood imgUrl={food.imgUrl} title={food.title} />))}
 
                 </div>
 

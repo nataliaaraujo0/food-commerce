@@ -1,4 +1,5 @@
 import { BestServices } from '../components/BestServices'
+import { CatalogBlog } from '../components/CatalogBlog'
 import { CatalogFood } from '../components/CatalogFood'
 import styles from './home.module.scss'
 export default function Home() {
@@ -33,6 +34,7 @@ export default function Home() {
 
         <CatalogFood />
         <BestServices />
+        <CatalogBlog />
       </main>
 
     </>
