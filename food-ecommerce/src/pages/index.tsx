@@ -1,3 +1,4 @@
+import { CatalogFood } from '../components/CatalogFood'
 import styles from './home.module.scss'
 export default function Home() {
   return (
@@ -28,6 +29,8 @@ export default function Home() {
           <img className={styles.icon} src="./images/illustration.svg" alt="" />
 
         </section>
+
+        <CatalogFood />
       </main>
 
     </>

@@ -1,0 +1,28 @@
+.cardContainer {
+  width: 528.45px;
+  height: 255px;
+  display: flex;
+  background-color: var(--white);
+  gap: 1rem;
+  border-radius: 15px 20px 15px 20px;
+  margin-top: 2rem;
+  box-shadow: 0px 15px 20px rgba(29, 22, 77, 0.08);
+
+  img {
+    height: 255px;
+  }
+
+  .cardContent {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  button {
+    width: 134px;
+    height: 48px;
+    background-color: var(--green-400);
+    border: 0;
+    border-radius: 7px;
+    color: var(--white);
+  }
+}
