@@ -1,3 +1,4 @@
+import { BestServices } from '../components/BestServices'
 import { CatalogFood } from '../components/CatalogFood'
 import styles from './home.module.scss'
 export default function Home() {
@@ -26,11 +27,12 @@ export default function Home() {
 
           </div>
 
-          <img className={styles.icon} src="./images/illustration.svg" alt="" />
+          <img className={styles.illustration} src="./images/illustration.svg" alt="" />
 
         </section>
 
         <CatalogFood />
+        <BestServices />
       </main>
 
     </>

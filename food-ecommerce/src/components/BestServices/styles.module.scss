@@ -1,0 +1,32 @@
+.ContentContainer {
+  width: 100%;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+
+  background-color: var(--white);
+
+  .ContentServices {
+    width: 420px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    p {
+      line-height: 27px;
+      margin-top: 16px;
+      font-size: 1rem;
+      color: var(--gray-100);
+    }
+
+    button {
+      margin-top: 32px;
+      width: 150px;
+      height: 54px;
+      border: 0;
+      background-color: var(--green-400);
+      color: var(--white);
+      font-size: 1rem;
+      border-radius: 5px;
+    }
+  }
+}

@@ -1,15 +1,15 @@
 .headerContainer {
-  max-width: 1120px;
-  display: flex;
-  justify-content: center;
 }
 
 .headerContent {
+  max-width: 1280px;
   display: flex;
   align-items: center;
   height: 5rem;
   padding: 0 4rem;
-  margin: 0 2rem;
+  margin: 0 auto;
+
+  z-index: 100;
 
   strong {
     font-size: 1.5rem;
@@ -35,5 +35,6 @@
     border-radius: 5px;
     background-color: var(--white);
     color: var(--green-400);
+    font-weight: bold;
   }
 }

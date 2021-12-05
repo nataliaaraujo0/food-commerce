@@ -3,28 +3,28 @@ import styles from '../CatalogFood/styles.module.scss'
 
 interface IFood {
     imgUrl: string;
-    nome: string;
+    title: string;
 }
 
 const foods: Array<IFood> = [
     {
         imgUrl: './images/comida_1.svg',
-        nome: 'Broccoli Salad with Bacon',
+        title: 'Broccoli Salad with Bacon',
 
     },
     {
         imgUrl: './images/comida_2.svg',
-        nome: 'Classic BeefBurgers',
+        title: 'Classic Beef Burgers',
 
     },
     {
         imgUrl: './images/comida_3.svg',
-        nome: 'Classic PotatoSalad',
+        title: 'Classic Potato Salad',
 
     },
     {
         imgUrl: './images/comida_4.svg',
-        nome: 'Cherry Cobbler on the Grill',
+        title: 'Cherry Cobbler on the Grill',
 
     },
 
@@ -41,7 +41,7 @@ export function CatalogFood() {
                     there live the blind texts.</p>
 
                 <div className={styles.cardFoods}>
-                    {foods.map(food => (<CardFood imgUrl={food.imgUrl} nome={food.nome} />))}
+                    {foods.map(food => (<CardFood imgUrl={food.imgUrl} nome={food.title} />))}
 
                 </div>
 
