@@ -1,6 +1,7 @@
 import { BestServices } from '../components/BestServices'
 import { CatalogBlog } from '../components/CatalogBlog'
 import { CatalogFood } from '../components/CatalogFood'
+import { Footer } from '../components/Footer'
 import { Membership } from '../components/Membership'
 import styles from './home.module.scss'
 export default function Home() {
@@ -37,6 +38,7 @@ export default function Home() {
         <BestServices />
         <CatalogBlog />
         <Membership />
+        <Footer />
       </main>
 
     </>
