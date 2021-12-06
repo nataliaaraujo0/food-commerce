@@ -1,6 +1,7 @@
 import { BestServices } from '../components/BestServices'
 import { CatalogBlog } from '../components/CatalogBlog'
 import { CatalogFood } from '../components/CatalogFood'
+import { Membership } from '../components/Membership'
 import styles from './home.module.scss'
 export default function Home() {
   return (
@@ -35,6 +36,7 @@ export default function Home() {
         <CatalogFood />
         <BestServices />
         <CatalogBlog />
+        <Membership />
       </main>
 
     </>

@@ -39,7 +39,7 @@ export function CatalogBlog() {
     return (
 
         <div className={styles.ContentContainer}>
-            <h1>blog</h1>
+            <h1>Read Our Blog</h1>
             <p>Far far away, behind the word mountains,
                 far from the countries Vokalia and
                 Consonantia, there live the blind texts.</p>
