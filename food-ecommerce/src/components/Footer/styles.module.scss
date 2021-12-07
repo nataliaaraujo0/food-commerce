@@ -5,7 +5,8 @@
   align-items: center;
   justify-content: center;
 
-  > p {
+  p {
+    color: var(--blue-800);
     padding-left: 80px;
     align-items: center;
     flex-direction: row;

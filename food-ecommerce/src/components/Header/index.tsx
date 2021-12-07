@@ -1,6 +1,18 @@
+import { useState } from 'react';
 import styles from './styles.module.scss';
 
 export function Header() {
+
+    const [isNewClientModalOpen, setIsNewClientModalOpen] = useState(false);
+
+    function handleOpenNewClientModal() {
+        setIsNewClientModalOpen(true);
+    }
+
+    function handleCloseNewClientModal() {
+        setIsNewClientModalOpen(false);
+    }
+
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
