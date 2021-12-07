@@ -3,10 +3,10 @@ import { CatalogBlog } from '../components/CatalogBlog'
 import { CatalogFood } from '../components/CatalogFood'
 import { Footer } from '../components/Footer'
 import { Membership } from '../components/Membership'
-import { NewClientModal } from '../components/NewClientModal'
 import styles from './home.module.scss'
 
 export default function Home() {
+
   return (
     <>
       <head>
@@ -35,7 +35,7 @@ export default function Home() {
           <img className={styles.illustration} src="./images/illustration.svg" alt="" />
 
         </section>
-        <NewClientModal />
+
         <CatalogFood />
         <BestServices />
         <CatalogBlog />

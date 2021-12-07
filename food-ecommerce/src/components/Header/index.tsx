@@ -1,19 +1,10 @@
-import { useState } from 'react';
 import styles from './styles.module.scss';
-import Modal from 'react-modal';
 
-export function Header() {
+interface HeaderProps {
+    onOpenNewClientModal: () => void;
+}
 
-    const [isNewClientModalOpen, setIsNewClientModalOpen] = useState(false);
-
-    function handleOpenNewClientModal() {
-        setIsNewClientModalOpen(true);
-    }
-
-    function handleCloseNewClientModal() {
-        setIsNewClientModalOpen(false);
-    }
-
+export function Header({ onOpenNewClientModal }: HeaderProps) {
     return (
         <header className={styles.headerContainer}>
             <div className={styles.headerContent}>
@@ -23,14 +14,7 @@ export function Header() {
                     <a href="">BLOG</a>
                     <a href="">JOIN</a>
                 </nav>
-                <button onClick={handleOpenNewClientModal} >REGISTER</button>
-
-                <Modal isOpen={isNewClientModalOpen}
-                    onRequestClose={handleCloseNewClientModal}>
-
-                    <h2>Cadastrar usuário</h2>
-                </Modal>
-
+                <button onClick={onOpenNewClientModal} >REGISTER</button>
             </div>
         </header>
     )
