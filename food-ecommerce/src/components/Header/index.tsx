@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import styles from './styles.module.scss';
+import Modal from 'react-modal';
 
 export function Header() {
 
@@ -22,7 +23,14 @@ export function Header() {
                     <a href="">BLOG</a>
                     <a href="">JOIN</a>
                 </nav>
-                <button>REGISTER</button>
+                <button onClick={handleOpenNewClientModal} >REGISTER</button>
+
+                <Modal isOpen={isNewClientModalOpen}
+                    onRequestClose={handleCloseNewClientModal}>
+
+                    <h2>Cadastrar usuário</h2>
+                </Modal>
+
             </div>
         </header>
     )
