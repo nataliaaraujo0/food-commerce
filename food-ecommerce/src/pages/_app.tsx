@@ -15,13 +15,14 @@ function MyApp({ Component, pageProps }) {
   }
   return (
     <>
-      <Header onOpenNewClientModal={handleOpenNewClientModal} />
-      <Component {...pageProps} />
-
       <NewClientModal
         isOpen={isNewClientModalOpen}
         onRequestClose={handleCloseNewClientModal}
       />
+      <Header onOpenNewClientModal={handleOpenNewClientModal} />
+      <Component {...pageProps} />
+
+
     </>
   )
 }
