@@ -2,6 +2,7 @@ import '../../styles/global.scss';
 import { Header } from '../components/Header';
 import { useState } from 'react';
 import { NewClientModal } from '../components/NewClientModal';
+import { CookiesProvider } from 'react-cookie';
 
 function MyApp({ Component, pageProps }) {
 
@@ -14,16 +15,16 @@ function MyApp({ Component, pageProps }) {
     setIsNewClientModalOpen(false);
   }
   return (
-    <>
-      <NewClientModal
-        isOpen={isNewClientModalOpen}
-        onRequestClose={handleCloseNewClientModal}
-      />
-      <Header onOpenNewClientModal={handleOpenNewClientModal} />
-      <Component {...pageProps} />
-
-
-    </>
+    <CookiesProvider>
+      <>
+        <NewClientModal
+          isOpen={isNewClientModalOpen}
+          onRequestClose={handleCloseNewClientModal}
+        />
+        <Header onOpenNewClientModal={handleOpenNewClientModal} />
+        <Component {...pageProps} />
+      </>
+    </CookiesProvider>
   )
 }
 

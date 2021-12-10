@@ -46,7 +46,7 @@ export function CatalogBlog() {
 
             <div className={styles.cardBlogs}>
                 {blogs.map(blog => (
-                    <CardBlog imgUrl={blog.imgUrl} title={blog.title} titleAvatar={blog.titleAvatar} />
+                    <CardBlog key={blog.title} imgUrl={blog.imgUrl} title={blog.title} titleAvatar={blog.titleAvatar} />
                 ))}
 
             </div>
