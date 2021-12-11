@@ -32,11 +32,8 @@ export function NewClientModal({ isOpen, onRequestClose }: NewClientModalProps) 
   useEffect(() => {
     const usersStr = localStorage.getItem('users');
 
-    try {
-      setUsers(JSON.parse(usersStr));
-    }
-    catch {
-
+    if (usersStr) {
+      setUsers(() => JSON.parse(usersStr));
     }
 
   }, []);

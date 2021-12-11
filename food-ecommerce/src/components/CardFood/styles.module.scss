@@ -1,6 +1,6 @@
 .cardContainer {
-  width: 528.45px;
-  height: 255px;
+  width: 528px;
+  height: 225px;
   display: flex;
   background-color: var(--white);
   gap: 1rem;
@@ -9,7 +9,7 @@
   box-shadow: 0px 15px 20px rgba(29, 22, 77, 0.08);
 
   img {
-    height: 255px;
+    height: 225px;
   }
 
   .cardContent {
@@ -20,6 +20,7 @@
   button {
     width: 134px;
     height: 48px;
+    font-size: 1rem;
     background-color: var(--green-400);
     border: 0;
     border-radius: 7px;
