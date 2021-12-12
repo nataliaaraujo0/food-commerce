@@ -4,6 +4,16 @@ import { api } from '../../services/api';
 import { useEffect, useState } from 'react';
 import { useForm } from 'react-hook-form';
 import { useCookies } from 'react-cookie';
+import { yupResolver } from '@hookform/resolvers/yup';
+import * as yup from "yup";
+
+const schema = yup.object({
+
+  nome: yup.string().required(),
+  dataNascimento: yup.string().required(),
+  cpf: yup.string().required(),
+
+}).required();
 interface NewClientModalProps {
   isOpen: boolean;
   onRequestClose: () => void;
@@ -26,7 +36,10 @@ interface User {
 export function NewClientModal({ isOpen, onRequestClose }: NewClientModalProps) {
 
   const [users, setUsers] = useState<User[]>([]);
-  const { register, handleSubmit, setValue } = useForm();
+  const { register, handleSubmit, setValue, formState: { errors } } = useForm({
+    resolver: yupResolver(schema)
+  });
+
   const [cookies, setCookie, removeCookie] = useCookies(['user']);
 
   useEffect(() => {
@@ -89,13 +102,15 @@ export function NewClientModal({ isOpen, onRequestClose }: NewClientModalProps) 
 
 
         <input type="text" placeholder="Nome" {...register('nome')} />
+        <p>{errors.nome && 'Campo obrigatorio'}</p>
+
         <input type="text" placeholder="Data de nascimento" {...register('dataNascimento')} />
+        <p>{errors.dataNascimento && 'Campo obrigatorio'}</p>
         <input type="text" placeholder="Cpf" {...register('cpf')} />
-
+        <p>{errors.cpf && 'Campo obrigatorio'}</p>
         <input type="text" placeholder="Cep"
-          onChange={(event) => onChangeCep(event.target.value)}
+          onChange={(event) => onChangeCep(event.target.value)} />
 
-        />
         <input type="text" placeholder="logradouro" {...register('logradouro')} />
 
         <input type="text" placeholder="bairro" {...register('bairro')} />
