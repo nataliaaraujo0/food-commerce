@@ -102,18 +102,21 @@ export function NewClientModal({ isOpen, onRequestClose }: NewClientModalProps) 
 
 
         <input type="text" placeholder="Nome" {...register('nome')} />
-        <p>{errors.nome && 'Campo obrigatorio'}</p>
+        <span>{errors.nome && 'Campo obrigatorio'}</span>
 
         <input type="text" placeholder="Data de nascimento" {...register('dataNascimento')} />
-        <p>{errors.dataNascimento && 'Campo obrigatorio'}</p>
+        <span>{errors.dataNascimento && 'Campo obrigatorio'}</span>
+
         <input type="text" placeholder="Cpf" {...register('cpf')} />
-        <p>{errors.cpf && 'Campo obrigatorio'}</p>
+        <span>{errors.cpf && 'Campo obrigatorio'}</span>
+
         <input type="text" placeholder="Cep"
           onChange={(event) => onChangeCep(event.target.value)} />
 
         <input type="text" placeholder="logradouro" {...register('logradouro')} />
 
         <input type="text" placeholder="bairro" {...register('bairro')} />
+
         <input type="text" placeholder="uf"  {...register('uf')} />
 
         <button type="submit"
