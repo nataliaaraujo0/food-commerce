@@ -1,8 +1,14 @@
-.ContentContainer {
+.bannerWrapper {
   height: 743.3px;
   display: flex;
-  justify-content: center;
-  border: 1px solid red;
+  justify-content: flex-start;
+
+  align-items: center;
+
+  .bannerSearch {
+    max-width: 25.75rem;
+    font-size: 2.3rem;
+  }
 
   .inputContent {
     margin-top: 16px;
@@ -31,11 +37,5 @@
     height: 52px;
     background-color: var(--green-400);
     border-radius: 8px;
-  }
-  .illustration {
-    display: flex;
-    margin-top: -80px;
-    z-index: -1;
-    height: 743.3px;
   }
 }

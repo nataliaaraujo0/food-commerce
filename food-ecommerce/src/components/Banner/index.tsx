@@ -1,8 +1,9 @@
 import styles from './styles.module.scss'
-export function HomePage() {
+export function Banner() {
   return (
-    <div className={styles.ContentContainer}>
-      <section className={styles.hero}>
+    <div className={styles.bannerWrapper}>
+
+      <section className={styles.bannerSearch}>
 
         <h1>Ready for
           Trying a new recipe?</h1>
@@ -15,10 +16,9 @@ export function HomePage() {
           </div>
         </div>
       </section>
-      <img className={styles.illustration}
-        src="./images/illustration.svg" alt="illustration" />
-    </div>
 
+
+    </div>
 
   );
 }

@@ -6,8 +6,8 @@ interface HeaderProps {
 
 export function Header({ onOpenNewClientModal }: HeaderProps) {
     return (
-        <header className={styles.headerContainer}>
-            <div className={styles.headerContent}>
+        <header className={styles.container}>
+            <div className={styles.headerWrapper}>
                 <strong>Healthy Food</strong>
                 <nav>
                     <a href="">HEALTHY RECIPES</a>
@@ -15,7 +15,9 @@ export function Header({ onOpenNewClientModal }: HeaderProps) {
                     <a href="">JOIN</a>
                 </nav>
                 <button onClick={onOpenNewClientModal} >REGISTER</button>
+
             </div>
+
         </header>
     )
 }
