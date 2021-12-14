@@ -19,7 +19,9 @@ export default function Home() {
 
         <Banner />
         <CatalogFood />
+        
         <BestServices />
+
         <CatalogBlog />
         <img className={styles.footer}
           src="./images/bloco_final_image.svg" alt="footer" />

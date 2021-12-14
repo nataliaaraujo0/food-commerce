@@ -4,7 +4,7 @@ import styles from './styles.module.scss'
 export function Footer() {
     return (
         <div className={styles.container}>
-            
+
             <div className={styles.footerWrapper}>
                 <Search title="Join our membership
                 to get special offer"/>
