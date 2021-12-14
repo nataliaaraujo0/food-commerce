@@ -1,18 +1,20 @@
+import { Search } from '../Serach'
 import styles from './styles.module.scss'
 
 export function Membership() {
     return (
         <div className={styles.ContentContainer}>
-            <div className={styles.headline}>
-                <h1>Join our membership
-                    to get special offer</h1>
-                <div>
-                    <input type="text" placeholder="Enter your email address"></input>
-                    <button>Join</button>
-                </div>
+            <Search title="Join our membership
+            to get special offer"/>
 
-            </div>
-            <img src="./images/bloco_final_image.svg" alt="" />
+         
+            <footer className={styles.ContentContainer}>
+                <p>© Copyrights 2019 Stack. All Rights Reserved.</p>
+
+                <p>Privacy Policy</p>
+                <p>Terms and Conditions</p>
+
+            </footer>
         </div>
     )
 }
