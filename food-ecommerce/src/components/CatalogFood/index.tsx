@@ -32,11 +32,14 @@ const foods: Array<IFood> = [
 
 export function CatalogFood() {
     return (
-        <div className={styles.ContentContainer}>
-            <h1>Our Best Recipes</h1>
-            <p>Far far away, behind the word mountains,
-                far from the countries Vokalia and Consonantia,
-                there live the blind texts.</p>
+        <div className={styles.container}>
+
+            <div className={styles.texts}>
+                <h1>Our Best Recipes</h1>
+                <p>Far far away, behind the word mountains,
+                    far from the countries Vokalia and Consonantia,
+                    there live the blind texts.</p>
+            </div>
 
             <div className={styles.cardFoods}>
                 {foods.map(food => (<CardFood key={food.title} imgUrl={food.imgUrl} title={food.title} />))}

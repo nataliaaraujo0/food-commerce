@@ -3,30 +3,67 @@
   margin: 0 auto;
   padding: 0 10px;
 
-  strong {
-    font-size: 1.5rem;
-    color: var(--green-400);
+  @mixin responsive($screen) {
+    @if $screen == mobile {
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+      }
+    } @else if ($screen == tablet) {
+      @media screen and (min-width: 768px) and (max-width: 1999px) {
+        @content;
+      }
+    } @else if ($screen == desktop) {
+      @media screen and (min-width: 1200px) {
+        @content;
+      }
+    }
   }
-}
 
-.headerWrapper {
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-  height: 5rem;
-
-  .navWrapper {
+  .headerWrapper {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
+    height: 5rem;
 
-    nav {
-      margin-left: 137px;
+    .logoWrapper {
+      display: flex;
+
+      strong {
+        font-size: 2rem;
+        color: var(--green-400);
+
+        @include responsive(mobile) {
+          width: 200px;
+          font-size: 1.75rem;
+        }
+      }
+    }
+
+    .navWrapper {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      border: 1px solid blue;
+
+      nav {
+        margin-left: 137px;
+        border: 1px solid red;
+        display: flex;
+
+        @include responsive(mobile) {
+        }
+      }
 
       a {
         text-decoration: none;
         color: var(--white);
         padding: 1rem;
+        display: flex;
+        align-items: center;
+
+        @include responsive(mobile) {
+          font-size: 1.2rem;
+        }
       }
     }
 

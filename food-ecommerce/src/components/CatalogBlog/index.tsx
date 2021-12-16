@@ -39,7 +39,7 @@ export function CatalogBlog() {
     return (
         <div className={styles.blogContainer}>
 
-            
+
             <div className={styles.container}>
                 <div className={styles.contentContainer}>
 
@@ -60,7 +60,6 @@ export function CatalogBlog() {
                     </div>
                 </div>
             </div>
-
         </div>
 
 

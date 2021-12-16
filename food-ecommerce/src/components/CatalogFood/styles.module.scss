@@ -1,8 +1,26 @@
-.ContentContainer {
+.container {
+  @mixin responsive($screen) {
+    @if $screen == mobile {
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+      }
+    } @else if ($screen == tablet) {
+      @media screen and (min-width: 768px) and (max-width: 1999px) {
+        @content;
+      }
+    } @else if ($screen == desktop) {
+      @media screen and (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+
   height: 768px;
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  border: 1px solid blue;
 
   h1 {
     font-size: 2rem;

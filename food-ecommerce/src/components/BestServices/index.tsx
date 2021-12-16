@@ -1,11 +1,11 @@
 import styles from './styles.module.scss'
 export function BestServices() {
     return (
-        <div className={styles.serviceContent}>
+        <div className={styles.container}>
             <img className={styles.serviceImg}
                 src="./images/bloco_services.svg" alt="" />
 
-            <div className={styles.container}>
+            <div className={styles.contentService}>
                 <div className={styles.wrapperService}>
                     <div className={styles.ContentServices}>
                         <h1>The best services ready
