@@ -1,35 +1,51 @@
 .container {
+  @mixin responsive($screen) {
+    @if $screen == mobile {
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+      }
+    } @else if ($screen == tablet) {
+      @media screen and (min-width: 768px) and (max-width: 1999px) {
+        @content;
+      }
+    } @else if ($screen == desktop) {
+      @media screen and (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+
   max-width: 1100px;
   margin: 0 auto;
   padding: 0 10px;
-}
 
-.cardContainer {
-  width: 528px;
-  height: 225px;
-  display: flex;
-  background-color: var(--white);
-  gap: 1rem;
-  border-radius: 15px 20px 15px 20px;
-  margin-top: 2rem;
-  box-shadow: 0px 15px 20px rgba(29, 22, 77, 0.08);
-
-  img {
+  .cardContainer {
+    width: 528px;
     height: 225px;
-  }
-
-  .cardContent {
     display: flex;
-    flex-direction: column;
-    justify-content: center;
-  }
-  button {
-    width: 134px;
-    height: 48px;
-    font-size: 1rem;
-    background-color: var(--green-400);
-    border: 0;
-    border-radius: 7px;
-    color: var(--white);
+    background-color: var(--white);
+    gap: 1rem;
+    border-radius: 15px 20px 15px 20px;
+    margin-top: 2rem;
+    box-shadow: 0px 15px 20px rgba(29, 22, 77, 0.08);
+
+    img {
+      height: 225px;
+    }
+
+    .cardContent {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+    button {
+      width: 134px;
+      height: 48px;
+      font-size: 1rem;
+      background-color: var(--green-400);
+      border: 0;
+      border-radius: 7px;
+      color: var(--white);
+    }
   }
 }

@@ -16,6 +16,8 @@ body {
   --gray-100: #bcbcbc;
   --white: #ffffff;
 
+  border: 1px solid red;
+
   @media (max-width: 1080px) {
     html {
       font-size: 93.75%;

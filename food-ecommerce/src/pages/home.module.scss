@@ -1,4 +1,4 @@
-.illustration {
+.homeContent {
   @mixin responsive($screen) {
     @if $screen == mobile {
       @media screen and (min-width: 320px) and (max-width: 767px) {
@@ -15,20 +15,31 @@
     }
   }
 
-  @include responsive(mobile) {
-    left: 286px;
+  // border: 1px solid red;
+  // @include responsive(mobile) {
+  //   width: 100%;
+  // }
+
+  .illustration {
+    @include responsive(mobile) {
+      display: none;
+    }
+    right: 0;
+    display: flex;
+    margin-top: -80px;
+    z-index: -1;
+    height: 743.3px;
+    position: absolute;
   }
 
-  right: 0;
-  display: flex;
-  margin-top: -80px;
-  z-index: -1;
-  height: 743.3px;
-  position: absolute;
-}
-.footer {
-  right: 0;
-  display: flex;
-  position: absolute;
-  height: 672px;
+  .footer {
+    @include responsive(mobile) {
+      display: none;
+    }
+
+    right: 0;
+    display: flex;
+    position: absolute;
+    height: 672px;
+  }
 }

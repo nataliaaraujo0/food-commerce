@@ -1,16 +1,39 @@
 .bannerSearch {
-  
+  @mixin responsive($screen) {
+    @if $screen == mobile {
+      @media screen and (min-width: 320px) and (max-width: 767px) {
+        @content;
+      }
+    } @else if ($screen == tablet) {
+      @media screen and (min-width: 768px) and (max-width: 1999px) {
+        @content;
+      }
+    } @else if ($screen == desktop) {
+      @media screen and (min-width: 1200px) {
+        @content;
+      }
+    }
+  }
+
+  @include responsive(mobile) {
+    max-width: 338px;
+  }
+
   max-width: 25.75rem;
   font-size: 2.3rem;
 
   .inputContent {
+    width: 100%;
     margin-top: 16px;
     display: flex;
+    border: 1px solid red;
 
     input {
-      width: 300px;
+      @include responsive(mobile) {
+        font-size: 1.4rem;
+      }
+      width: 80%;
       height: 52px;
-      border: 1px solid var(--blue-600);
       border-radius: 5px;
       padding-left: 10px;
     }
@@ -26,7 +49,7 @@
 
     cursor: pointer;
 
-    width: 52px;
+    width: 20%;
     height: 52px;
     background-color: var(--green-400);
     border-radius: 8px;

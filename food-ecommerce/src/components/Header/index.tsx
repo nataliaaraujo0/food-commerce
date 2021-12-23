@@ -12,14 +12,6 @@ export function Header({ onOpenNewClientModal }: HeaderProps) {
                     <strong>Healthy Food</strong>
                 </div>
 
-                <div id="menuToggle">
-                    <div id="menu">
-                        <div id="bar1" className={styles.bar1}></div>
-                        <div id="bar2" className={styles.bar2}></div>
-                        <div id="bar3" className={styles.bar3}></div>
-                    </div>
-                </div>
-
                 <div className={styles.navWrapper}>
                     <nav id="nav">
                         <a href="">HEALTHY RECIPES</a>
