@@ -20,6 +20,9 @@
   padding: 0 10px;
 
   .cardContainer {
+    @include responsive(mobile) {
+      width: 330px;
+    }
     width: 528px;
     height: 225px;
     display: flex;
@@ -30,6 +33,10 @@
     box-shadow: 0px 15px 20px rgba(29, 22, 77, 0.08);
 
     img {
+      @include responsive(mobile) {
+        width: 11.25rem;
+        height: 11.25rem;
+      }
       height: 225px;
     }
 

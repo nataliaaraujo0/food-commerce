@@ -21,6 +21,7 @@
 
   max-width: 25.75rem;
   font-size: 2.3rem;
+  margin-bottom: 6rem;
 
   .inputContent {
     width: 100%;
@@ -40,6 +41,8 @@
   }
 
   .searchContent {
+    @include responsive(mobile) {
+    }
     display: flex;
     justify-content: center;
     align-items: center;
