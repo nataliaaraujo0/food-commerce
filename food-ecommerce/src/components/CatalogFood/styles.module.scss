@@ -15,6 +15,21 @@
     }
   }
 
+  .texts {
+    @include responsive(mobile) {
+      display: flex;
+      flex-direction: column;
+
+      p {
+        font-size: 1.4rem;
+        display: flex;
+        justify-content: space-between;
+        width: 300px;
+        margin-bottom: 4rem;
+      }
+    }
+  }
+
   height: 768px;
   display: flex;
   flex-direction: column;
