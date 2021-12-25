@@ -22,7 +22,9 @@
   .cardContainer {
     @include responsive(mobile) {
       width: 330px;
+      height: 171px;
     }
+
     width: 528px;
     height: 225px;
     display: flex;
@@ -41,11 +43,23 @@
     }
 
     .cardContent {
+      @include responsive(mobile) {
+        h1 {
+          font-size: 1.3rem;
+        }
+      }
+
       display: flex;
       flex-direction: column;
       justify-content: center;
+      align-items: center;
     }
     button {
+      @include responsive(mobile) {
+        width: 95px;
+        height: 45px;
+      }
+
       width: 134px;
       height: 48px;
       font-size: 1rem;
