@@ -30,6 +30,11 @@
     }
   }
 
+  @include responsive(mobile) {
+    height: auto;
+    margin-bottom: 4rem;
+  }
+
   height: 768px;
   display: flex;
   flex-direction: column;
