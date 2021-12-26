@@ -15,10 +15,9 @@
     }
   }
 
-  // border: 1px solid red;
-  // @include responsive(mobile) {
-  //   width: 100%;
-  // }
+  @include responsive(mobile) {
+    width: 665px;
+  }
 
   .illustration {
     @include responsive(mobile) {

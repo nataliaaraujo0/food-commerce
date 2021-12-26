@@ -21,8 +21,8 @@
 
   .cardContainer {
     @include responsive(mobile) {
-      width: 330px;
-      height: 171px;
+      width: 500px;
+      height: 230px;
     }
 
     width: 528px;
@@ -36,8 +36,7 @@
 
     img {
       @include responsive(mobile) {
-        width: 11.25rem;
-        height: 11.25rem;
+        height: 230px;
       }
       height: 225px;
     }
@@ -56,10 +55,9 @@
     }
     button {
       @include responsive(mobile) {
-        width: 95px;
-        height: 45px;
+        height: 54px;
+        font-size: 1.3rem;
       }
-
       width: 134px;
       height: 48px;
       font-size: 1rem;
