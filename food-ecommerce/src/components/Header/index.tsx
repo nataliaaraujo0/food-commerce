@@ -15,8 +15,8 @@ export function Header({ onOpenNewClientModal }: HeaderProps) {
                 <div className={styles.navWrapper}>
                     <nav id="nav">
                         <a href="">HEALTHY RECIPES</a>
-                        <a href="">BLOG</a>
-                        <a href="">JOIN</a>
+                        <a href="#blog">BLOG</a>
+                        <a href="#join">JOIN</a>
                     </nav>
                     <button onClick={onOpenNewClientModal} >REGISTER</button>
                 </div>

@@ -1,6 +1,5 @@
 import styles from './styles.module.scss';
-export function Search({title}) {
-
+export function Search({ title, img, buttonText }) {
 
     return (
         <section className={styles.bannerSearch}>
@@ -10,9 +9,10 @@ export function Search({title}) {
             <div className={styles.inputContent}>
                 <input type="text"
                     placeholder="Search healthy recipes" />
-                <div className={styles.searchContent}>
-                    <img src="./images/icon.svg" alt="" />
-                </div>
+                <button className={styles.searchContent}>
+                    {img && <img src={img} alt="" />}
+                    {buttonText && <span>{buttonText}</span>}
+                </button>
             </div>
         </section>
     )

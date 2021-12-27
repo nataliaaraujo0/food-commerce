@@ -39,10 +39,8 @@ export function CatalogBlog() {
     return (
         <div className={styles.blogContainer}>
 
-
             <div className={styles.container}>
                 <div className={styles.contentContainer}>
-
                     <div className={styles.texts}>
                         <h1>Read Our Blog</h1>
                         <p>Far far away, behind the word mountains,

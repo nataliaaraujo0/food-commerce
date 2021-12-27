@@ -2,7 +2,9 @@ import { Banner } from '../components/Banner'
 import { BestServices } from '../components/BestServices'
 import { CatalogBlog } from '../components/CatalogBlog'
 import { CatalogFood } from '../components/CatalogFood'
+import { CatalogFooter } from '../components/CatalogFooter'
 import { Footer } from '../components/Footer'
+
 import styles from './home.module.scss'
 
 export default function Home() {
@@ -19,13 +21,13 @@ export default function Home() {
 
         <Banner />
         <CatalogFood />
-        
-        <BestServices />
 
+        <BestServices />
         <CatalogBlog />
         <img className={styles.footer}
           src="./images/bloco_final_image.svg" alt="footer" />
-        <Footer />
+        <CatalogFooter />
+        <Footer/>
       </main>
 
     </>
