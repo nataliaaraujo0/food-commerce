@@ -41,7 +41,7 @@ export function Header({ onOpenNewClientModal }: HeaderProps) {
 
                         </div>
                     )}
-                    <nav className={styles.navDesktop} >
+                    <nav className={styles.navDesktop}>
                         <a href="">HEALTHY RECIPES</a>
                         <a href="#blog">BLOG</a>
                         <a href="#join">JOIN</a>
@@ -53,8 +53,8 @@ export function Header({ onOpenNewClientModal }: HeaderProps) {
                         <Image
                             src="/images/bar.png"
                             alt=""
-                            width="100"
-                            height="100"
+                            width="50"
+                            height="50"
                         />
                     </button>
 

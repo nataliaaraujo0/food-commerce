@@ -8,22 +8,22 @@ interface IFood {
 
 const foods: Array<IFood> = [
     {
-        imgUrl: './images/comida_1.svg',
+        imgUrl: '/images/comida_1.svg',
         title: 'Broccoli Salad with Bacon',
 
     },
     {
-        imgUrl: './images/comida_2.svg',
+        imgUrl: '/images/comida_2.svg',
         title: 'Classic Beef Burgers',
 
     },
     {
-        imgUrl: './images/comida_3.svg',
+        imgUrl: '/images/comida_3.svg',
         title: 'Classic Potato Salad',
 
     },
     {
-        imgUrl: './images/comida_4.svg',
+        imgUrl: '/images/comida_4.svg',
         title: 'Cherry Cobbler on the Grill',
 
     },

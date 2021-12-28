@@ -7,7 +7,9 @@ export function Banner() {
         <Search
           title="Ready for
           Trying a new recipe?"
-          img="images/icon.svg" />
+          Image="/images/icon.svg"
+
+        />
       </div>
     </div>
   );

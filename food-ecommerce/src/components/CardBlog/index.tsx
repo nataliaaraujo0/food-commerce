@@ -1,10 +1,12 @@
 import styles from './styles.module.scss'
-
+import NextImage from 'next/image';
 export function CardBlog({ imgUrl, title, titleAvatar }) {
     return (
         <div className={styles.cardContainer}>
 
-            <img src={imgUrl} alt="" />
+            <NextImage src={imgUrl} alt=""
+                width="348"
+                height="247" />
             <div className={styles.cardContent}>
                 <h1>{title}</h1>
 

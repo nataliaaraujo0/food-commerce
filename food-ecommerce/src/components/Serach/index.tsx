@@ -1,5 +1,14 @@
 import styles from './styles.module.scss';
-export function Search({ title, img, buttonText }) {
+import NextImage from 'next/image';
+
+export function Search({ title, Image = '', buttonText = '' }) {
+
+    const imageSource = <NextImage
+        src={Image}
+        alt="Icon Source"
+        width={16}
+        height={16}
+    />
 
     return (
         <section className={styles.bannerSearch}>
@@ -10,7 +19,7 @@ export function Search({ title, img, buttonText }) {
                 <input type="text"
                     placeholder="Search healthy recipes" />
                 <button className={styles.searchContent}>
-                    {img && <img src={img} alt="" />}
+                    {Image && imageSource}
                     {buttonText && <span>{buttonText}</span>}
                 </button>
             </div>
