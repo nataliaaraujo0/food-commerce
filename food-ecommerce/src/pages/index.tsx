@@ -27,7 +27,7 @@ export default function Home() {
         <img className={styles.footer}
           src="./images/bloco_final_image.svg" alt="footer" />
         <CatalogFooter />
-        <Footer/>
+        <Footer />
       </main>
 
     </>
