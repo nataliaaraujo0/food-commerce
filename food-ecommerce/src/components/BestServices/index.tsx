@@ -1,10 +1,17 @@
 import styles from './styles.module.scss'
+import NextImage from 'next/image';
+
+
 export function BestServices() {
+
     return (
         <div className={styles.container}>
-            <img className={styles.serviceImg}
-                src="./images/bloco_services.svg" alt="" />
-
+            <NextImage className={styles.serviceImg}
+                src="/images/bloco_services.svg"
+                alt="Image Service"
+                width="718.272"
+                height="726.925"
+            />
             <div className={styles.contentService}>
                 <div className={styles.wrapperService}>
                     <div className={styles.ContentServices}>

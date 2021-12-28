@@ -4,6 +4,7 @@ import { CatalogBlog } from '../components/CatalogBlog'
 import { CatalogFood } from '../components/CatalogFood'
 import { CatalogFooter } from '../components/CatalogFooter'
 import { Footer } from '../components/Footer'
+import NextImage from 'next/image';
 
 import styles from './home.module.scss'
 
@@ -16,16 +17,24 @@ export default function Home() {
       </head>
 
       <main className={styles.homeContent}>
-        <img className={styles.illustration}
-          src="./images/illustration.svg" alt="illustration" />
+        <NextImage className={styles.illustration}
+          src="/images/illustration.svg"
+          alt="illustration"
+          width="872" height="743.301"
+        />
 
         <Banner />
         <CatalogFood />
 
         <BestServices />
         <CatalogBlog />
-        <img className={styles.footer}
-          src="./images/bloco_final_image.svg" alt="footer" />
+        <NextImage className={styles.footer}
+          src="/images/bloco_final_image.svg"
+          alt="footer"
+          width="679"
+          height="672"
+        />
+
         <CatalogFooter />
         <Footer />
       </main>
