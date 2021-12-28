@@ -31,14 +31,22 @@ export function Header({ onOpenNewClientModal }: HeaderProps) {
 
                     {toggleMenu && (
                         <div className={styles.navWrapper}>
-                            <nav>
+
+                            <nav className={styles.navMobile}>
                                 <a href="">HEALTHY RECIPES</a>
                                 <a href="#blog">BLOG</a>
                                 <a href="#join">JOIN</a>
                                 <button className={styles.registerButtonMobile} onClick={onOpenNewClientModal}>REGISTER</button>
                             </nav>
+
                         </div>
                     )}
+                    <nav className={styles.navDesktop} >
+                        <a href="">HEALTHY RECIPES</a>
+                        <a href="#blog">BLOG</a>
+                        <a href="#join">JOIN</a>
+
+                    </nav>
                     <button className={styles.registerButton} onClick={onOpenNewClientModal}>REGISTER</button>
 
                     <button className={styles.bar} onClick={toggleNav}>
