@@ -13,7 +13,7 @@
         @content;
       }
     } @else if ($screen == breakpointNav) {
-      @media screen and (min-width: 1881px) {
+      @media screen and (min-width: 1632px) {
         @content;
       }
     }
@@ -57,7 +57,7 @@
         height: 100%;
         width: 100%;
         z-index: 10;
-        background-color: blue;
+        background-color: var(--green-400);
       }
 
       .navMobile {
@@ -83,12 +83,11 @@
           }
 
           @include responsive(mobile) {
-            color: var(--green-400);
+            // color: var(--green-400);
             font-size: 3rem;
             font-weight: bold;
           }
         }
-
         .registerButtonMobile {
           @include responsive(desktop) {
             display: none;
@@ -109,13 +108,16 @@
           }
         }
       }
-     
     }
 
     .bar {
       @include responsive(desktop) {
         display: none;
       }
+      @include responsive(tablet) {
+        display: none;
+      }
+
       @include responsive(mobile) {
         border: 0;
         background-color: var(--white);
@@ -139,55 +141,55 @@
       font-weight: bold;
       margin-left: 1rem;
     }
-   // desktop
-   .navDesktop {
-    @include responsive(mobile) {
-      display: none;
-    }
-    margin-left: 137px;
-    display: flex;
-    @include responsive(mobile) {
-      flex-direction: column;
-      margin-left: 0;
-    }
-    a {
-      text-decoration: none;
-      color: var(--white);
-      padding: 1rem;
-      display: flex;
-      align-items: center;
-
-      @include responsive(breakpointNav) {
-        color: rgb(0, 53, 0);
-        font-weight: bold;
-      }
-
+    // desktop
+    .navDesktop {
       @include responsive(mobile) {
-        color: var(--green-400);
-        font-size: 3rem;
-        font-weight: bold;
-      }
-    }
-
-    .registerButtonMobile {
-      @include responsive(desktop) {
         display: none;
       }
+      margin-left: 137px;
+      display: flex;
       @include responsive(mobile) {
-        background-color: var(--green-400);
+        flex-direction: column;
+        margin-left: 0;
+      }
+      a {
+        text-decoration: none;
         color: var(--white);
+        padding: 1rem;
+        display: flex;
+        align-items: center;
 
-        width: 130px;
-        height: 52px;
-        font-size: 1rem;
-        border: 0;
-        border-radius: 5px;
-        background-color: var(--white);
-        color: var(--green-400);
-        font-weight: bold;
-        margin-left: 1rem;
+        @include responsive(breakpointNav) {
+          color: rgb(0, 53, 0);
+          font-weight: bold;
+        }
+
+        @include responsive(mobile) {
+          color: var(--green-400);
+          font-size: 3rem;
+          font-weight: bold;
+        }
+      }
+
+      .registerButtonMobile {
+        @include responsive(desktop) {
+          display: none;
+        }
+        @include responsive(mobile) {
+          background-color: var(--green-400);
+          color: var(--white);
+
+          width: 130px;
+          height: 52px;
+          font-size: 1rem;
+          border: 0;
+          border-radius: 5px;
+          background-color: var(--white);
+          color: var(--green-400);
+          font-weight: bold;
+          margin-left: 1rem;
+        }
       }
     }
-  }
   }
 }

@@ -1,3 +1,4 @@
+
 .homeContent {
   @mixin responsive($screen) {
     @if $screen == mobile {

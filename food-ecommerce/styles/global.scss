@@ -6,7 +6,6 @@
 html {
   scroll-behavior: smooth;
 }
-
 body {
   @mixin responsive($screen) {
     @if $screen == mobile {
